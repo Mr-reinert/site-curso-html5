@@ -41,7 +41,7 @@
             </hgroup>
         </header>
 
-<form>
+<form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
 
 <fieldset id="usuario"><legend>Identificação do Usuário</legend> 
     <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
@@ -55,12 +55,24 @@
 <fieldset id="endereco"><legend>Endereço do Usuário</legend>
     <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav..."></p>
     <p>Número: <input type="number" name="tName" id="cName" min="0" max="999999"> </p>
-    Estado:
-    Cidade:
+    <p> <label for="cEst">Estado:</label>  
+    <select name="tEst" id="cEst">
+    <optgroup label="Região Sudeste">
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+    </optgroup> 
+    <optgroup>
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+    </optgroup>
+    </select></p>
+    <p><label for="cCid">Cidade:</label></p>
 </fieldset>
 <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-    Grau de Urgência:
-    Mensagem:
+    <p><label for="cUrg">Grau de Urgência:</label></p>
+    <p><label for="cMsg">Mensagem:</label></p>
 </fieldset>
 <fieldset id="pedido"><legend>Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
